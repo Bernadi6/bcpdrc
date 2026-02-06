@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google tag (gtag.js) snippet added by Site Kit -->
+  <meta property="og:title" content="Break the Chain of Poverty - Charity Organization">
+  <meta property="og:description" content="We Provide Solutions">
+  <meta property="og:image" content="https://bcprdc.org/bcpdrc/bcplogo.png">
+  <meta property="og:url" content="https://bcprdc.org">
+  
+  <title>BCP | Break the Chain of Poverty</title>
+  
+  
+  <link rel="stylesheet" href="style.css" />
+  <!-- End Google Tag Manager snippet added by Site Kit -->
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" sizes="32x32" />
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" />
+  <meta name="msapplication-TileImage" content="https://bcprdc.org/bcpdrc/bcplogo.png" />
+
+  <link rel='stylesheet' id='brac-usa-style-css' href='https://reachyourpotential.me/ool/css/style.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='player_css-css' href='https://reachyourpotential.me/kool/css/plyr.css?ver=6.6.2' media='all' />
+        <link rel='stylesheet' id='select2_css-css' href='https://reachyourpotential.me/kool/css/select2.min.css?ver=6.6.2' media='all' />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://reachyourpotential.me/kool/js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script src="https://reachyourpotential.me/kool/js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+</head>
+  <style>
+    :root{
+      --blue-950:#061735;
+      --blue-900:#0b2a63;
+      --blue-850:#0f3478;
+      --blue-800:#11408f;
+      --blue-700:#1b57c2;
+
+      --white:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+
+      --shadow: 0 14px 30px rgba(2, 6, 23, .16);
+      --shadow-soft: 0 10px 22px rgba(2, 6, 23, .10);
+
+      --radius:16px;
+      --radius-lg:22px;
+
+      --container: 1080px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:#eef4ff;
+    }
+
+    .container{
+      width:min(var(--container), 92vw);
+      margin:0 auto;
+    }
+
+    /* ===== TOP MENU ===== */
+    .topbar{ background: var(--white); }
+    .topbar__inner{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      padding:18px 0 10px;
+    }
+    .brand{
+      display:inline-flex;
+      align-items:flex-start;
+      text-decoration:none;
+    }
+    .brand__logo{
+      width:110px;
+      height:auto;
+      display:block;
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding-top:8px;
+      font-weight:700;
+    }
+    .nav__link{ color: var(--blue-850); text-decoration:none; }
+    .nav__link:hover{ text-decoration:underline; }
+    .nav__sep{ color:#8aa1c9; }
+
+    /* ===== Language switch (same as hospital) ===== */
+    .langToggle{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      margin-left: 8px;
+    }
+    .langLabel{
+      font-weight: 800;
+      font-size: 12px;
+      color: var(--blue-900);
+    }
+    .langBtn{
+      background: #e9f0ff;
+      border: 1px solid rgba(15, 23, 42, .12);
+      color: var(--blue-900);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-weight: 800;
+      font-size: 12px;
+      cursor:pointer;
+    }
+    .langBtn.is-active{
+      background: var(--blue-700);
+      color:#fff;
+      border-color: transparent;
+    }
+
+    .topbar__line{
+      height:10px;
+      background: linear-gradient(90deg, var(--blue-700), var(--blue-850));
+    }
+
+    /* ✅ Show FULL image inside each card */
+    .infoCard__img{
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: cover;
+      background: #f4f7ff;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .infoCard{ min-height: 420px; }
+
+    /* ===== HERO ===== */
+    .waveHero{
+      position:relative;
+      padding: 46px 0 52px;
+      background:
+        radial-gradient(900px 420px at 25% 20%, rgba(255,255,255,.18), rgba(255,255,255,0)),
+        linear-gradient(180deg, var(--blue-850), var(--blue-800));
+      overflow:hidden;
+    }
+    .waveHero::after{
+      content:"";
+      position:absolute;
+      left:-10%;
+      right:-10%;
+      bottom:-1px;
+      height: 120px;
+      background:
+        radial-gradient(900px 140px at 50% 0%, rgba(255,255,255,.22), rgba(255,255,255,0)),
+        linear-gradient(180deg, rgba(255,255,255,.10), rgba(238,244,255,1));
+      border-top-left-radius: 60% 100%;
+      border-top-right-radius: 60% 100%;
+    }
+    .waveHero__inner{
+      position:relative;
+      text-align:center;
+      color:#eaf2ff;
+      z-index:1;
+    }
+    .waveHero__title{
+      margin:0;
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 900;
+      letter-spacing:.2px;
+      text-shadow: 0 10px 24px rgba(0,0,0,.25);
+    }
+    .waveHero__subtitle{
+      margin: 8px auto 0;
+      font-weight: 700;
+      opacity:.92;
+      text-shadow: 0 10px 24px rgba(0,0,0,.22);
+      font-size: 14px;
+      max-width: 900px;
+      line-height:1.5;
+    }
+
+    .pageBg{
+      background:
+        radial-gradient(1000px 520px at 55% 22%, rgba(255,255,255,.6), rgba(255,255,255,0)),
+        linear-gradient(180deg, #eaf1ff, #eef4ff);
+      padding: 18px 0 28px;
+    }
+
+    .panel{
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+    }
+
+    .stack{
+      display:grid;
+      gap: 16px;
+      padding-top: 6px;
+    }
+
+    .infoCard{
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(15, 23, 42, .07);
+      border-radius: 14px;
+      box-shadow: 0 10px 18px rgba(2,6,23,.08);
+      padding: 18px 18px 14px;
+      text-align:center;
+    }
+    .infoCard__title{
+      margin: 2px 0 6px;
+      font-weight: 900;
+      color: var(--blue-900);
+      font-size: 18px;
+    }
+    .infoCard__text{
+      margin: 0 auto 10px;
+      max-width: 860px;
+      color:#22324a;
+      font-weight:650;
+      line-height:1.7;
+      font-size: 13px;
+    }
+
+    /* ===== Video section ===== */
+    .videoPanelTitle{
+      text-align:center;
+      margin: 2px 0 14px;
+      font-weight: 900;
+      color: var(--blue-900);
+      font-size: 18px;
+    }
+    .videoGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .videoCard{
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(15, 23, 42, .07);
+      border-radius: 14px;
+      box-shadow: 0 10px 18px rgba(2,6,23,.08);
+      overflow:hidden;
+    }
+    .videoFrame{
+      width:100%;
+      aspect-ratio: 16 / 9;
+      border:0;
+      display:block;
+      background:#000;
+    }
+    .videoLink{
+      display:block;
+      padding: 10px 12px;
+      font-weight: 800;
+      color: var(--blue-700);
+      text-decoration:none;
+      font-size: 13px;
+    }
+    .videoLink:hover{ text-decoration: underline; }
+
+    /* ===== FOOTER ===== */
+    .footer{
+      background: linear-gradient(180deg, #0b2a63, #061735);
+      color:#eaf2ff;
+      padding: 22px 0 10px;
+      margin-top: 18px;
+    }
+    .footer__grid{
+      display:grid;
+      grid-template-columns: 1.1fr .8fr .9fr;
+      gap:18px;
+      align-items:start;
+    }
+    .footer__logo{
+      width:46px;
+      height:auto;
+      display:block;
+      margin-bottom:10px;
+      border-radius: 8px;
+    }
+    .footer__name{ font-weight:900; margin-bottom:4px; }
+    .footer__tagline{
+      color: rgba(234,242,255,.85);
+      font-weight:600;
+      font-size: 13px;
+    }
+    .footer__title{
+      margin:0 0 10px;
+      font-size: 14px;
+      font-weight:900;
+    }
+    .footer a{
+      display:block;
+      color: rgba(234,242,255,.85);
+      text-decoration:none;
+      margin: 6px 0;
+      font-weight:600;
+      font-size: 13px;
+    }
+    .footer a:hover{ color:#fff; text-decoration:underline; }
+    .footer__contact div{
+      margin: 6px 0;
+      font-size: 13px;
+      font-weight:600;
+      color: rgba(234,242,255,.85);
+    }
+    .footer__bottom{
+      text-align:center;
+      padding-top: 14px;
+      font-size: 12px;
+      color: rgba(234,242,255,.70);
+    }
+
+    @media (max-width: 980px){
+      .videoGrid{ grid-template-columns: 1fr; }
+      .footer__grid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px){
+      .topbar__inner{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .nav{
+        flex-wrap: wrap;
+        padding-top: 0;
+      }
+      .infoCard{
+        min-height: auto;
+      }
+      .infoCard__img{
+        height: 200px;
+      }
+    }
+
+     /* ===== Trusted care ===== */
+     .trusted{
+      margin-top: 18px;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+    }
+    .trusted__title{
+      text-align:center;
+      margin: 6px 0 14px;
+      font-weight: 900;
+      color: var(--blue-900);
+      font-size: 22px;
+    }
+    .trustedGrid{
+      display:grid;
+      grid-template-columns: 320px 1fr 360px;
+      gap: 14px;
+      align-items:stretch;
+    }
+
+    .directorCard{
+      background: rgba(255,255,255,.96);
+      border: 1px solid rgba(15, 23, 42, .07);
+      border-radius: 14px;
+      box-shadow: 0 10px 18px rgba(2,6,23,.08);
+      overflow:hidden;
+    }
+    .directorCard img{
+      width:100%;
+      height: 220px;
+      object-fit: cover;
+      display:block;
+    }
+    .directorCard__body{
+      padding: 12px 14px 14px;
+    }
+    .directorName{
+      margin: 0 0 6px;
+      font-weight: 900;
+      color: var(--blue-900);
+      font-size: 18px;
+    }
+    .directorRole{
+      margin: 0 0 10px;
+      color: #22324a;
+      font-weight: 750;
+      font-size: 13px;
+      opacity: .9;
+    }
+  </style>
+        
+        
+<body>
+
+  <!-- MENU -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="BCP Home">
+        <img class="brand__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP Logo" />
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="https://bcprdc.org/index.html" data-en="Home" data-fr="Home">home</a>
+        <span class="nav__sep">|</span>
+        <a class="nav__link" href="https://bcprdc.org/Contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+
+        <div class="langToggle" aria-label="Language switcher">
+          <span class="langLabel" data-en="Language:" data-fr="Langue :">Language:</span>
+          <button class="langBtn" type="button" data-lang-btn="en" onclick="setLang('en')">EN</button>
+          <button class="langBtn" type="button" data-lang-btn="fr" onclick="setLang('fr')">FR</button>
+        </div>
+      </nav>
+    </div>
+    <div class="topbar__line"></div>
+  </header>
+
+  <!-- HERO -->
+  <header class="waveHero">
+    <div class="container waveHero__inner">
+      <h1 class="waveHero__title"
+          data-en="Humanitarian Service Programs"
+          data-fr="Programmes de services humanitaires">
+        Humanitarian Service Programs
+      </h1>
+
+      <p class="waveHero__subtitle"
+         data-en="Transforming lives through infrastructure, food, shelter and community engagement."
+         data-fr="Transformer des vies grâce aux infrastructures, à l’alimentation, à l’hébergement et à l’engagement communautaire.">
+        Transforming lives through infrastructure, food, shelter and community engagement.
+      </p>
+    </div>
+  </header>
+
+  <main class="pageBg">
+    <div class="container">
+
+      <section class="panel">
+        <div class="stack">
+
+          <article class="infoCard">
+            <img class="infoCard__img" src="https://bcprdc.org/bcpdrc/orph.png" alt="Orphanage support">
+            <div class="infoCard__title"
+                 data-en="Orphanage Support"
+                 data-fr="Soutien aux orphelinats">
+              Orphanage Support
+            </div>
+            <p class="infoCard__text"
+               data-en="We support orphanages by providing food, school supplies, clothing, and emotional care. Our goal is to ensure that every child grows in a safe, loving, and supportive environment."
+               data-fr="Nous soutenons les orphelinats en fournissant de la nourriture, des fournitures scolaires, des vêtements et un soutien émotionnel. Notre objectif est de garantir que chaque enfant grandisse dans un environnement sûr, aimant et bienveillant.">
+              We support orphanages by providing food, school supplies, clothing, and emotional care.
+              Our goal is to ensure that every child grows in a safe, loving, and supportive environment.
+            </p>
+          </article>
+
+          <article class="infoCard">
+            <img class="infoCard__img" src="https://bcprdc.org/bcpdrc/volunteer.png" alt="Volunteer program">
+            <div class="infoCard__title"
+                 data-en="Volunteer Program"
+                 data-fr="Programme de volontariat">
+              Volunteer Program
+            </div>
+            <p class="infoCard__text"
+               data-en="Our volunteer program empowers individuals to serve in education, health, and humanitarian activities. Volunteers play a key role in creating lasting and positive change in communities. Through community service initiatives, we work with local residents to clean neighborhoods, improve public spaces, and support vulnerable families—building unity and shared responsibility."
+               data-fr="Notre programme de volontariat permet à chacun de servir dans l’éducation, la santé et les actions humanitaires. Les volontaires jouent un rôle clé pour créer un changement durable et positif dans les communautés. Grâce aux initiatives de service communautaire, nous travaillons avec les habitants pour nettoyer les quartiers, améliorer les espaces publics et soutenir les familles vulnérables—en renforçant l’unité et la responsabilité partagée.">
+              Our volunteer program empowers individuals to serve in education, health, and humanitarian
+              activities. Volunteers play a key role in creating lasting and positive change in communities.
+              Through community service initiatives, we work with local residents to clean neighborhoods,
+              improve public spaces, and support vulnerable families—building unity and shared responsibility.
+            </p>
+          </article>
+
+          <article class="infoCard">
+            <img class="infoCard__img" src="https://bcprdc.org/bcpdrc/drill.png" alt="Clean water drilling">
+            <div class="infoCard__title"
+                 data-en="Clean Water Access"
+                 data-fr="Accès à l’eau potable">
+              Clean Water Access
+            </div>
+            <p class="infoCard__text"
+               data-en="We provide access to clean and safe drinking water by drilling wells in underserved communities. This initiative helps prevent waterborne diseases, improves health conditions, and restores dignity by ensuring families have a reliable and sustainable source of clean water."
+               data-fr="Nous facilitons l’accès à une eau potable et sûre en forant des puits dans les communautés défavorisées. Cette initiative aide à prévenir les maladies hydriques, améliore la santé et restaure la dignité en garantissant aux familles une source d’eau propre fiable et durable.">
+              We provide access to clean and safe drinking water by drilling wells in underserved communities.
+              This initiative helps prevent waterborne diseases, improves health conditions, and restores dignity
+              by ensuring families have a reliable and sustainable source of clean water.
+            </p>
+          </article>
+
+          <article class="infoCard">
+            <img class="infoCard__img" src="https://bcprdc.org/bcpdrc/brig.png" alt="Bridge construction">
+            <div class="infoCard__title"
+                 data-en="Build Bridges"
+                 data-fr="Construction de ponts">
+              Build Bridges
+            </div>
+            <p class="infoCard__text"
+               data-en="We construct small bridges to connect isolated communities, improving access to schools, healthcare facilities, markets, and essential services. These bridges strengthen mobility, enhance safety, and support economic and social development in remote areas."
+               data-fr="Nous construisons de petits ponts pour relier des communautés isolées, améliorant l’accès aux écoles, aux centres de santé, aux marchés et aux services essentiels. Ces ponts renforcent la mobilité, améliorent la sécurité et soutiennent le développement économique et social dans les zones reculées.">
+              We construct small bridges to connect isolated communities, improving access to schools, healthcare
+              facilities, markets, and essential services. These bridges strengthen mobility, enhance safety, and
+              support economic and social development in remote areas.
+            </p>
+          </article>
+
+          <section class="trusted" aria-label="Trusted care" id="trusted">
+            <div class="trusted__title" data-en="" data-fr=""></div>
+    
+            <div class="trustedGrid">
+              <!-- Director -->
+              <div class="directorCard">
+                <img src="https://bcprdc.org/bcpdrc/Nathan.jpg" alt="Clinic Director">
+                <div class="directorCard__body">
+                  <div class="directorName"> Nathan Mahunda</div>
+                  <div class="directorRole" data-en="Humanitarian Supervisor" data-fr="Surperviseur Humanitaire">Humanitarian Supervisor</div>
+    
+                  <div class="infoRow"><span>📞</span> <span data-en="Phone: +243 900 280 220" data-fr="T&#233;l&#233;phone : +243 900 280 220">Phone: +243 900 280 220</span></div>
+                  <div class="infoRow"><span>✉️</span> <span data-en="Email: nathan@bcporc.org" data-fr="Email : nathan@bcporc.org">Email: olivierkadima@bcporc.org</span></div>
+                  <div class="infoRow"><span>📍</span> <span data-en="Location: Kinshasa, DRC" data-fr="Lieu : Kinshasa, RDC">Location: Kinshasa, DRC</span></div>
+                </div>
+              </div>
+    
+              
+          </section>
+    
+        </div>
+      </main>
+
+          <!-- VIDEOS -->
+          <div class="infoCard" style="padding:18px;">
+            <div class="videoPanelTitle"
+                 data-en="Our Work in Action"
+                 data-fr="Notre travail en action">
+              Our Work in Action
+            </div>
+
+            <div class="videoGrid">
+              <div class="videoCard">
+                <iframe class="videoFrame"
+                  src="https://www.youtube.com/embed/VIDEO_ID_1"
+                  title="Our Work Video 1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <a class="videoLink"
+                   href="https://www.youtube.com/watch?v=VIDEO_ID_1"
+                   target="_blank" rel="noopener"
+                   data-en="Watch on YouTube"
+                   data-fr="Regarder sur YouTube">
+                  Watch on YouTube
+                </a>
+              </div>
+
+              <div class="videoCard">
+                <iframe class="videoFrame"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Our Work Video 2"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <a class="videoLink"
+                   href="https://www.youtube.com/watch?v=VIDEO_ID_2"
+                   target="_blank" rel="noopener"
+                   data-en="Watch on YouTube"
+                   data-fr="Regarder sur YouTube">
+                  Watch on YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img class="footer__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP">
+        <div class="footer__name"
+             data-en="Break the Chain of Poverty"
+             data-fr="Break the Chain of Poverty">
+          Break the Chain of Poverty
+        </div>
+        <div class="footer__tagline"
+             data-en="Empowering communities, transforming lives."
+             data-fr="Autonomiser les communautés, transformer des vies.">
+          Empowering communities, transforming lives.
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title"
+             data-en="Quick Links"
+             data-fr="Liens rapides">
+          Quick Links
+        </div>
+        <a href="index.html" data-en="Home" data-fr="Accueil">Home</a>
+        <a href="about.html" data-en="About" data-fr="À propos">About</a>
+        <a href="programs.html" data-en="Programs" data-fr="Programmes">Programs</a>
+        <a href="reports.html" data-en="Reports" data-fr="Rapports">Reports</a>
+      </div>
+
+      <div class="footer__contact">
+        <div class="footer__title"
+             data-en="Contact Us"
+             data-fr="Contactez-nous">
+          Contact Us
+        </div>
+
+        <div data-en="Email: info@bcporc.org" data-fr="Email : info@bcporc.org">Email: info@bcporc.org</div>
+        <div data-en="Phone: +243 960 456 789" data-fr="Téléphone : +243 960 456 789">Phone: +243 960 456 789</div>
+        <div data-en="Location: Kinshasa, DRC" data-fr="Lieu : Kinshasa, RDC">Location: Kinshasa, DRC</div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      © <span id="year"></span>
+      <span data-en="Break the Chain of Poverty. All rights reserved."
+            data-fr="Break the Chain of Poverty. Tous droits réservés.">
+        Break the Chain of Poverty. All rights reserved.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+
+      // 1) Translate normal text (supports HTML too)
+      document.querySelectorAll("[data-en][data-fr]").forEach((el) => {
+        el.innerHTML = el.dataset[lang];
+      });
+
+      // 2) Translate placeholders (if you add any inputs later)
+      document.querySelectorAll("[data-en-placeholder][data-fr-placeholder]").forEach((el) => {
+        el.setAttribute("placeholder", el.dataset[lang + "Placeholder"]);
+      });
+
+      localStorage.setItem("lang", lang);
+      updateActiveLangButton(lang);
+    }
+
+    function updateActiveLangButton(lang) {
+      document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.langBtn === lang);
+        btn.setAttribute("aria-pressed", btn.dataset.langBtn === lang ? "true" : "false");
+      });
+    }
+
+    function initLang() {
+      const saved = localStorage.getItem("lang");
+      const browserIsFrench = (navigator.language || "").toLowerCase().startsWith("fr");
+      const defaultLang = saved || (browserIsFrench ? "fr" : "en");
+      setLang(defaultLang);
+    }
+
+    document.addEventListener("DOMContentLoaded", initLang);
+  </script>
+
+</body>
+</html>

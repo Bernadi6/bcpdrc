@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google tag (gtag.js) snippet added by Site Kit -->
+  <meta property="og:title" content="Break the Chain of Poverty - Charity Organization">
+  <meta property="og:description" content="We Provide Solutions">
+  <meta property="og:image" content="https://bcprdc.org/bcpdrc/bcplogo.png">
+  <meta property="og:url" content="https://bcprdc.org/">
+  
+  <title>BCP | Break the Chain of Poverty</title>
+  
+  
+  <link rel="stylesheet" href="style.css" />
+  <!-- End Google Tag Manager snippet added by Site Kit -->
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" sizes="32x32" />
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" />
+  <meta name="msapplication-TileImage" content="https://bcprdc.org/bcpdrc/bcplogo.png" />
+
+  <link rel='stylesheet' id='brac-usa-style-css' href='https://reachyourpotential.me/ool/css/style.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='player_css-css' href='https://reachyourpotential.me/kool/css/plyr.css?ver=6.6.2' media='all' />
+        <link rel='stylesheet' id='select2_css-css' href='https://reachyourpotential.me/kool/css/select2.min.css?ver=6.6.2' media='all' />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://reachyourpotential.me/kool/js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script src="https://reachyourpotential.me/kool/js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+  <style>
+    :root{
+      --blue-950:#061735;
+      --blue-900:#0b2a63;
+      --blue-850:#0f3478;
+      --blue-800:#11408f;
+      --blue-700:#1b57c2;
+
+      --white:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+
+      --shadow: 0 14px 30px rgba(2, 6, 23, .16);
+      --shadow-soft: 0 10px 22px rgba(2, 6, 23, .10);
+
+      --radius:16px;
+      --radius-lg:22px;
+
+      --container: 1080px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:#eef4ff;
+    }
+
+    .container{
+      width:min(var(--container), 92vw);
+      margin:0 auto;
+    }
+
+    /* ===== Menu ===== */
+    .topbar{ background: var(--white); }
+    .topbar__inner{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      padding:18px 0 10px;
+    }
+    .brand{
+      display:inline-flex;
+      align-items:flex-start;
+      text-decoration:none;
+    }
+    .brand__logo{
+      width:110px;
+      height:auto;
+      display:block;
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding-top:8px;
+      font-weight:600;
+    }
+    .nav__link{ color: var(--blue-850); text-decoration:none; }
+    .nav__link:hover{ text-decoration:underline; }
+    .nav__sep{ color:#8aa1c9; }
+
+    /* ===== Language switch (same as hospital) ===== */
+    .langToggle{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      margin-left: 8px;
+    }
+    .langLabel{
+      font-weight: 800;
+      font-size: 12px;
+      color: var(--blue-900);
+    }
+    .langBtn{
+      background: #e9f0ff;
+      border: 1px solid rgba(15, 23, 42, .12);
+      color: var(--blue-900);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-weight: 800;
+      font-size: 12px;
+      cursor:pointer;
+    }
+    .langBtn.is-active{
+      background: var(--blue-700);
+      color:#fff;
+      border-color: transparent;
+    }
+
+    .topbar__line{
+      height:10px;
+      background: linear-gradient(90deg, var(--blue-700), var(--blue-850));
+    }
+
+    /* ===== Button ===== */
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 11px 16px;
+      border-radius: 12px;
+      font-weight:800;
+      text-decoration:none;
+      border:none;
+      cursor:pointer;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btn--primary{
+      background: linear-gradient(180deg, #1a55c6, #0b2a63);
+      color:#fff;
+      box-shadow: var(--shadow-soft);
+    }
+    .btn--primary:hover{ box-shadow: var(--shadow); }
+
+    /* ===== Education page ===== */
+    .pageHero{
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+      background: var(--blue-900);
+    }
+    .pageHero__bg{
+      position:absolute; inset:0;
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.05);
+      transform: scale(1.03);
+    }
+    .pageHero__overlay{
+      position:absolute; inset:0;
+      background:
+        linear-gradient(90deg, rgba(9,29,67,.80), rgba(9,29,67,.35)),
+        radial-gradient(900px 260px at 30% 40%, rgba(255,255,255,.12), rgba(255,255,255,0));
+    }
+    .pageHero__content{
+      position: relative;
+      height: 100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 6px;
+      color: #fff;
+    }
+    .pageHero__title{
+      margin:0;
+      font-size: clamp(26px, 3.2vw, 36px);
+      font-weight: 900;
+      text-shadow: 0 10px 20px rgba(0,0,0,.28);
+    }
+    .pageHero__subtitle{
+      margin:0;
+      font-weight: 600;
+      opacity: .92;
+      text-shadow: 0 10px 20px rgba(0,0,0,.20);
+    }
+
+    .pageMain{
+      background:
+        radial-gradient(900px 420px at 60% 20%, rgba(255,255,255,.55), rgba(255,255,255,0)),
+        linear-gradient(180deg, #eaf1ff, #eef4ff);
+      padding: 26px 0 30px;
+    }
+
+    .eduGrid{
+      display:grid;
+      grid-template-columns: 1fr 1.35fr;
+      grid-template-areas:
+        "img text"
+        "list badge";
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .card{
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .card--image{ grid-area: img; }
+    .card--image img{
+      width:100%;
+      height:100%;
+      min-height: 360px;
+      object-fit: cover;
+      display:block;
+    }
+
+    .card--text{ grid-area: text; padding: 22px 22px 16px; }
+    .card__title{
+      margin:0 0 10px;
+      color: var(--blue-900);
+      font-size: 26px;
+      font-weight: 900;
+      text-align: center;
+    }
+    .card__p{
+      margin: 0 0 10px;
+      color:#22324a;
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    .card--list{ grid-area: list; padding: 18px 22px; }
+    .card__subtitle{
+      margin: 0 0 12px;
+      text-align: center;
+      color: var(--blue-900);
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .focusList{
+      margin: 0;
+      padding-left: 18px;
+      display:grid;
+      gap: 10px;
+      color:#22324a;
+      font-weight: 700;
+    }
+    .focusList li{ line-height: 1.5; }
+
+    .card--badge{ grid-area: badge; display:flex; align-items:center; justify-content:center; padding: 18px; }
+    .card--badge img{
+      width: min(320px, 90%);
+      height:auto;
+      display:block;
+      filter: drop-shadow(0 12px 18px rgba(2,6,23,.18));
+    }
+
+    .schoolsCallout{
+      text-align:center;
+      margin-top: 22px;
+      padding: 18px 0 0;
+    }
+    .schoolsCallout__title{
+      margin: 0 0 6px;
+      color: var(--blue-900);
+      font-weight: 900;
+    }
+    .schoolsCallout__text{
+      margin: 0 auto 14px;
+      max-width: 720px;
+      color:#22324a;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+    .schoolsCallout__btn{
+      min-width: 220px;
+      border-radius: 12px;
+    }
+
+    /* ===== Footer ===== */
+    .footer{
+      background: linear-gradient(180deg, #0b2a63, #061735);
+      color:#eaf2ff;
+      padding: 22px 0 10px;
+    }
+    .footer__grid{
+      display:grid;
+      grid-template-columns: 1.1fr .8fr .9fr;
+      gap:18px;
+      align-items:start;
+    }
+    .footer__logo{
+      width:46px;
+      height:auto;
+      display:block;
+      margin-bottom:10px;
+      border-radius: 8px;
+    }
+    .footer__name{ font-weight:900; margin-bottom:4px; }
+    .footer__tagline{
+      color: rgba(234,242,255,.85);
+      font-weight:600;
+      font-size: 13px;
+    }
+    .footer__title{
+      margin:0 0 10px;
+      font-size: 14px;
+      font-weight:900;
+    }
+    .footer a{
+      display:block;
+      color: rgba(234,242,255,.85);
+      text-decoration:none;
+      margin: 6px 0;
+      font-weight:600;
+      font-size: 13px;
+    }
+    .footer a:hover{ color:#fff; text-decoration:underline; }
+    .footer__contact div{
+      margin: 6px 0;
+      font-size: 13px;
+      font-weight:600;
+      color: rgba(234,242,255,.85);
+    }
+    .footer__bottom{
+      text-align:center;
+      padding-top: 14px;
+      font-size: 12px;
+      color: rgba(234,242,255,.70);
+    }
+
+    @media (max-width: 980px){
+      .eduGrid{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "img"
+          "text"
+          "list"
+          "badge";
+      }
+      .card--image img{ min-height: 260px; }
+      .footer__grid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px){
+      .topbar__inner{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .nav{
+        flex-wrap: wrap;
+        padding-top: 0;
+      }
+      .pageHero{
+        height: 200px;
+      }
+      .pageHero__title{
+        font-size: clamp(22px, 6.5vw, 30px);
+      }
+      .pageMain{
+        padding: 18px 0 24px;
+      }
+    }
+  </style>
+   
+<body>
+
+  <!-- TOP MENU -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="BCP Home">
+        <img class="brand__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP Logo" />
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="https://bcprdc.org/index.html" data-en="Home" data-fr="Conseil">Home</a>
+        <span class="nav__sep">|</span>
+        <a class="nav__link" href="https://bcprdc.org/school.html" data-en="Schools" data-fr="Ecoles">Ecoles</a>
+
+        <div class="langToggle" aria-label="Language switcher">
+          <span class="langLabel" data-en="Language:" data-fr="Langue :">Language:</span>
+          <button class="langBtn" type="button" data-lang-btn="en" onclick="setLang('en')">EN</button>
+          <button class="langBtn" type="button" data-lang-btn="fr" onclick="setLang('fr')">FR</button>
+        </div>
+      </nav>
+    </div>
+    <div class="topbar__line"></div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pageHero">
+    <div class="pageHero__bg" style="background-image:url('https://bcprdc.org/bcpdrc/eleve.png?v=2');"></div>
+    <div class="pageHero__overlay"></div>
+
+    <div class="container pageHero__content">
+      <h1 class="pageHero__title"
+          data-en="Education Program"
+          data-fr="Programme d&#39;&#233;ducation">
+        Education Program
+      </h1>
+      <p class="pageHero__subtitle"
+         data-en="Empowering minds through access to quality education and resources."
+         data-fr="Renforcer les esprits gr&#226;ce &#224; l&#39;acc&#232;s &#224; une &#233;ducation de qualit&#233; et &#224; des ressources.">
+        Empowering minds through access to quality education and resources.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="pageMain">
+    <div class="container">
+
+      <div class="eduGrid">
+
+        <!-- LEFT IMAGE -->
+        <div class="card card--image">
+          <img src="https://bcprdc.org/bcpdrc/eleve.png" alt="Student holding a trophy" />
+        </div>
+
+        <!-- RIGHT: WHAT WE DO -->
+        <section class="card card--text">
+          <h2 class="card__title"
+              data-en="What We Do"
+              data-fr="Ce que nous faisons">
+            What We Do
+          </h2>
+
+          <p class="card__p"
+             data-en="At Break the Chain of Poverty, our Education Program is committed to unlocking opportunities for students in underserved communities. We provide essential resources like books, school supplies, and uniforms, and we strive to empower the next generation by working alongside local educators and families."
+             data-fr="Chez Break the Chain of Poverty, notre programme d&#39;&#233;ducation s&#39;engage &#224; ouvrir des opportunit&#233;s aux &#233;l&#232;ves des communaut&#233;s d&#233;favoris&#233;es. Nous fournissons des ressources essentielles comme des livres, des fournitures scolaires et des uniformes, et nous cherchons &#224; autonomiser la nouvelle g&#233;n&#233;ration en travaillant avec les &#233;ducateurs locaux et les familles.">
+            At Break the Chain of Poverty, our Education Program is committed to unlocking opportunities for
+            students in underserved communities. We provide essential resources like books, school supplies, and
+            uniforms, and we strive to empower the next generation by working alongside local educators and families.
+          </p>
+
+          <p class="card__p"
+             data-en="We help students stay in school, grow in confidence, and pursue their dreams through education."
+             data-fr="Nous aidons les &#233;l&#232;ves &#224; rester &#224; l&#39;&#233;cole, &#224; gagner en confiance et &#224; poursuivre leurs r&#234;ves gr&#226;ce &#224; l&#39;&#233;ducation.">
+            We help students stay in school, grow in confidence, and pursue their dreams through education.
+          </p>
+        </section>
+
+        <!-- BOTTOM LEFT: FOCUS AREAS -->
+        <section class="card card--list">
+          <h3 class="card__subtitle"
+              data-en="Our Focus Areas"
+              data-fr="Nos domaines prioritaires">
+            Our Focus Areas
+          </h3>
+
+          <ul class="focusList">
+            <li data-en="Providing school supplies to children in need"
+                data-fr="Fournir des fournitures scolaires aux enfants dans le besoin">
+              Providing school supplies to children in need
+            </li>
+
+            <li data-en="Supporting literacy and reading clubs"
+                data-fr="Soutenir l&#39;alphab&#233;tisation et les clubs de lecture">
+              Supporting literacy and reading clubs
+            </li>
+
+            <li data-en="Training passionate teachers and volunteers"
+                data-fr="Former des enseignants et des volontaires passionn&#233;s">
+              Training passionate teachers and volunteers
+            </li>
+
+            <li data-en="Building and renovating safe, inclusive classrooms"
+                data-fr="Construire et r&#233;nover des salles de classe s&#251;res et inclusives">
+              Building and renovating safe, inclusive classrooms
+            </li>
+          </ul>
+        </section>
+
+        <!-- BOTTOM RIGHT: LOGO CARD -->
+        <div class="card card--badge">
+          <img src="https://bcprdc.org/bcpdrc/aae_logo.jpg" alt="American Academy of Excellence badge" />
+        </div>
+
+      </div>
+
+      <!-- SCHOOLS SECTION -->
+      <section class="schoolsCallout">
+        <h2 class="schoolsCallout__title"
+            data-en="Schools"
+            data-fr="&#201;coles">
+          Schools
+        </h2>
+
+        <p class="schoolsCallout__text"
+           data-en="We have 7 American Academy of Excellence schools in different areas of Kinshasa, serving over 6,000 students."
+           data-fr="Nous avons 7 &#233;coles American Academy of Excellence dans diff&#233;rentes zones de Kinshasa, au service de plus de 6 000 &#233;l&#232;ves.">
+          We have 7 American Academy of Excellence schools in different areas of Kinshasa, serving over 6,000 students.
+        </p>
+
+        <a class="btn btn--primary schoolsCallout__btn"
+           href="https://bcprdc.org/school.html"
+           data-en="See more Schools"
+           data-fr="Voir plus d&#39;&#233;coles">
+          See more Schools
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <img class="footer__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP" />
+        <div class="footer__name"
+             data-en="Break the Chain of Poverty"
+             data-fr="Break the Chain of Poverty">
+          Break the Chain of Poverty
+        </div>
+        <div class="footer__tagline"
+             data-en="Empowering communities, transforming lives."
+             data-fr="Autonomiser les communaut&#233;s, transformer des vies.">
+          Empowering communities, transforming lives.
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__title"
+            data-en="Programs"
+            data-fr="Programmes">
+          Programs
+        </h4>
+        <a href="education.html" data-en="Education" data-fr="&#201;ducation">Education</a>
+        <a href="humanitarian.html" data-en="Humanitarian" data-fr="Humanitaire">Humanitarian</a>
+        <a href="hospital.html" data-en="Hospital" data-fr="H&#244;pital">Hospital</a>
+        <a href="projects.html" data-en="Project" data-fr="Projet">Project</a>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__title"
+            data-en="Contact Us"
+            data-fr="Nous contacter">
+          Contact Us
+        </h4>
+        <div data-en="Email: info@bcporc.org" data-fr="Email : info@bcporc.org">Email: info@bcporc.org</div>
+        <div data-en="Phone: +243 960 456 789" data-fr="T&#233;l&#233;phone : +243 960 456 789">Phone: +243 960 456 789</div>
+        <div data-en="Location: Kinshasa, DRC" data-fr="Lieu : Kinshasa, RDC">Location: Kinshasa, DRC</div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      © <span id="year"></span>
+      <span data-en="Break the Chain of Poverty. All rights reserved."
+            data-fr="Break the Chain of Poverty. Tous droits r&#233;serv&#233;s.">
+        Break the Chain of Poverty. All rights reserved.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ===== Same translator as hospital page =====
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+
+      // 1) Translate normal text (supports HTML too)
+      document.querySelectorAll("[data-en][data-fr]").forEach((el) => {
+        el.innerHTML = el.dataset[lang];
+      });
+
+      // 2) Translate placeholders (if you add inputs later)
+      document.querySelectorAll("[data-en-placeholder][data-fr-placeholder]").forEach((el) => {
+        el.setAttribute("placeholder", el.dataset[lang + "Placeholder"]);
+      });
+
+      localStorage.setItem("lang", lang);
+      updateActiveLangButton(lang);
+    }
+
+    function updateActiveLangButton(lang) {
+      document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.langBtn === lang);
+        btn.setAttribute("aria-pressed", btn.dataset.langBtn === lang ? "true" : "false");
+      });
+    }
+
+    function initLang() {
+      const saved = localStorage.getItem("lang");
+      const browserIsFrench = (navigator.language || "").toLowerCase().startsWith("fr");
+      const defaultLang = saved || (browserIsFrench ? "fr" : "en");
+      setLang(defaultLang);
+    }
+
+    document.addEventListener("DOMContentLoaded", initLang);
+  </script>
+
+</body>
+</html>

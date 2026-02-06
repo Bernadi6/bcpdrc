@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google tag (gtag.js) snippet added by Site Kit -->
+  <meta property="og:title" content="Break the Chain of Poverty - Charity Organization">
+  <meta property="og:description" content="We Provide Solutions">
+  <meta property="og:image" content="https://bcprdc.org/bcpdrc/bcplogo.png">
+  <meta property="og:url" content="https://bcprdc.org">
+  
+  <title>BCP | Break the Chain of Poverty</title>
+  
+  
+  <link rel="stylesheet" href="style.css" />
+  <!-- End Google Tag Manager snippet added by Site Kit -->
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" sizes="32x32" />
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://bcprdc.org/bcpdrc/bcplogo.png" />
+  <meta name="msapplication-TileImage" content="https://bcprdc.org/bcpdrc/bcplogo.png" />
+
+  
+
+</head>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://bcprdc.org/",
+    "logo": "https://bcprdc.org/bcpdrc/bcplogo.png?v=2",
+    "name": "Break the Chain of Poverty - Charity Organization",
+    "description": "We Provide Solutions."
+  }
+  </script>
+
+<style>
+:root{
+  --blue-950:#061735;
+  --blue-900:#0b2a63;
+  --blue-850:#0f3478;
+  --blue-800:#11408f;
+  --blue-700:#1b57c2;
+
+  --white:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+
+  --shadow: 0 14px 30px rgba(2, 6, 23, .16);
+  --shadow-soft: 0 10px 22px rgba(2, 6, 23, .10);
+
+  --radius:16px;
+  --radius-lg:22px;
+
+  --container: 1080px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:#eef4ff;
+}
+
+/* UTIL */
+.container{
+  width:min(var(--container), 92vw);
+  margin:0 auto;
+}
+
+/* TOP BAR */
+.topbar{
+  background: var(--white);
+}
+.topbar__inner{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  padding:18px 0 10px;
+}
+.brand{
+  display:inline-flex;
+  align-items:flex-start;
+  text-decoration:none;
+}
+.brand__logo{
+  width:110px;
+  height:auto;
+  display:block;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding-top:8px;
+  font-weight:600;
+}
+.nav__link{
+  color: var(--blue-850);
+  text-decoration:none;
+}
+.nav__link:hover{ text-decoration:underline; }
+.nav__sep{ color:#8aa1c9; }
+
+.topbar__line{
+  height:10px;
+  background: linear-gradient(90deg, var(--blue-700), var(--blue-850));
+}
+
+/* ✅ Language toggle styles */
+.langToggle{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-left: 8px;
+}
+.langLabel{
+  font-weight: 800;
+  font-size: 12px;
+  color: var(--blue-900);
+}
+.langBtn{
+  background: #e9f0ff;
+  border: 1px solid rgba(15, 23, 42, .12);
+  color: var(--blue-900);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 800;
+  font-size: 12px;
+  cursor:pointer;
+}
+.langBtn.is-active{
+  background: var(--blue-700);
+  color:#fff;
+  border-color: transparent;
+}
+
+/* HERO background like your wave style */
+.hero{
+  background:
+    radial-gradient(900px 380px at 20% 0%, rgba(255,255,255,.22), rgba(255,255,255,0)),
+    linear-gradient(180deg, var(--blue-850), var(--blue-800) 55%, #dfeaff 56%, #eef4ff 100%);
+  padding:26px 0 0;
+}
+
+.hero__inner{ padding-bottom:22px; }
+
+.hero__grid{
+  display:grid;
+  grid-template-columns: 1.3fr .9fr;
+  gap:22px;
+  align-items:start;
+}
+
+/* LEFT */
+.hero__title{
+  margin:0 0 14px;
+  font-size: clamp(34px, 4.4vw, 56px);
+  line-height:1.05;
+  font-weight:800;
+  color:#eaf2ff;
+  text-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.hero__photoWrap{
+  background: rgba(255,255,255,.18);
+  border-radius: var(--radius-lg);
+  padding:10px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,.26);
+}
+
+.hero__photo{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  display:block;
+  border-radius: 14px;
+}
+
+/* ===== HERO SLIDER (keeps same size/design as hero__photo image) ===== */
+.heroSlider{
+  position: relative;
+}
+
+.heroSlider__viewport{
+  overflow:hidden;
+  border-radius: 14px;     /* ✅ same as your old .hero__photo */
+}
+
+.heroSlider__track{
+  display:flex;
+  transition: transform .55s ease;
+  will-change: transform;
+}
+
+.heroSlide{
+  flex: 0 0 100%;
+  height: 340px;           /* ✅ EXACT same as your old hero__photo height */
+}
+
+.heroSlide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* arrows inside the image box */
+.heroSlider__btn{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.35);
+  background: rgba(11,42,99,.65);
+  color:#fff;
+  font-size: 26px;
+  line-height: 1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow: 0 10px 20px rgba(2,6,23,.18);
+}
+
+.heroSlider__btn:hover{ background: rgba(11,42,99,.85); }
+.heroSlider__btn--left{ left: 10px; }
+.heroSlider__btn--right{ right: 10px; }
+
+/* dots under the hero image box (inside the same wrap) */
+.heroDots{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  padding: 10px 0 0;
+}
+
+.heroDots button{
+  width: 9px; height: 9px;
+  border-radius: 999px;
+  border: none;
+  cursor:pointer;
+  background: rgba(255,255,255,.55);
+}
+
+.heroDots button[aria-current="true"]{
+  background: rgba(255,255,255,.95);
+}
+
+/* responsive: match your existing rules */
+@media (max-width: 900px){
+  .heroSlide{ height: 280px; }  /* same as your old responsive hero__photo */
+}
+@media (max-width: 520px){
+  .heroSlide{ height: 220px; }  /* same as your old responsive hero__photo */
+}
+
+
+/* RIGHT */
+.donationCard{
+  background: linear-gradient(180deg, #0b2a63, #0f3b8f);
+  border-radius: var(--radius-lg);
+  padding:26px 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,.18);
+}
+.donationCard__text{
+  margin:0 0 18px;
+  color:#eaf2ff;
+  font-weight:700;
+  font-size: 18px;
+  line-height:1.35;
+  text-shadow: 0 3px 10px rgba(0,0,0,.25);
+}
+
+/* SECTIONS */
+.section{
+  padding: 22px 0;
+  background:
+    radial-gradient(900px 380px at 60% 40%, rgba(255,255,255,.42), rgba(255,255,255,0));
+}
+.section--about{
+  padding-top:14px;
+  margin-top:-10px;
+}
+.section__title{
+  text-align:center;
+  margin: 6px 0 10px;
+  color: var(--blue-900);
+  font-size: 22px;
+  letter-spacing:.2px;
+}
+.section__title--glow{
+  color:#eaf2ff;
+  text-shadow: 0 3px 10px rgba(0,0,0,.25);
+}
+.section__text{
+  text-align:center;
+  margin:0 auto;
+  max-width: 880px;
+  color:#22324a;
+  line-height:1.6;
+  font-weight:600;
+}
+
+/* PROGRAM AREA background like your image */
+.section--programs{
+  background:
+    radial-gradient(1000px 500px at 50% 30%, rgba(255,255,255,.16), rgba(255,255,255,0)),
+    linear-gradient(180deg, #2c63c8, #0f3b8f);
+  padding: 26px 0;
+}
+.programs{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:14px;
+  margin-top: 14px;
+}
+
+.programCard{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  border-radius: 14px;
+  padding:14px 14px 12px;
+  box-shadow: var(--shadow-soft);
+  border:1px solid rgba(255,255,255,.18);
+  min-height: 92px;
+}
+.programCard__name{
+  font-weight:800;
+  font-size: 16px;
+  margin-bottom:6px;
+}
+.programCard__desc{
+  font-size: 13px;
+  line-height:1.35;
+  opacity:.95;
+}
+
+.programCard--edu{ background: linear-gradient(180deg, #0f4fc8, #083a95); }
+.programCard--hum{ background: linear-gradient(180deg, #1f9b54, #11683a); }
+.programCard--hos{ background: linear-gradient(180deg, #b03bbb, #7a1c86); }
+.programCard--pro{ background: linear-gradient(180deg, #ff7a1a, #d84c00); }
+
+/* CONTACT */
+.section--contact{
+  background:
+    radial-gradient(900px 380px at 50% 20%, rgba(255,255,255,.35), rgba(255,255,255,0)),
+    linear-gradient(180deg, #1e56be, #0f3b8f);
+  padding: 26px 0 34px;
+}
+.contactForm{
+  width:min(560px, 92vw);
+  margin: 14px auto 0;
+  display:grid;
+  gap:10px;
+}
+.input{
+  border: 1px solid rgba(255,255,255,.24);
+  background: rgba(255,255,255,.92);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight:600;
+  outline:none;
+}
+.input:focus{
+  border-color: rgba(255,255,255,.8);
+  box-shadow: 0 0 0 4px rgba(255,255,255,.12);
+}
+.input--textarea{
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 11px 16px;
+  border-radius: 12px;
+  font-weight:800;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn:active{ transform: translateY(1px); }
+
+.btn--primary{
+  background: linear-gradient(180deg, #1a55c6, #0b2a63);
+  color:#fff;
+  box-shadow: var(--shadow-soft);
+}
+.btn--primary:hover{ box-shadow: var(--shadow); }
+
+.btn--pill{
+  border-radius: 999px;
+  padding: 12px 18px;
+}
+.btn--light{
+  background: linear-gradient(180deg, #ffffff, #cfe3ff);
+  color: var(--blue-900);
+  box-shadow: 0 16px 30px rgba(0,0,0,.20);
+}
+.btn--light:hover{ box-shadow: 0 20px 36px rgba(0,0,0,.25); }
+
+/* ===== MOBILE IMAGE FIX (IMPORTANT) ===== */
+@media (max-width: 768px){
+
+/* Stack hero content */
+.hero__grid{
+  grid-template-columns: 1fr;
+}
+
+/* Force slider to be visible on phones (Safari fix) */
+.hero__photoWrap{
+  padding: 8px;
+}
+
+.heroSlider{
+  width: 100%;
+}
+
+.heroSlider__viewport{
+  width: 100%;
+  height: 260px;   /* ✅ REQUIRED for iPhone Safari */
+  overflow: hidden;
+}
+
+.heroSlider__track{
+  height: 100%;
+}
+
+.heroSlide{
+  height: 260px;
+  min-height: 260px;
+}
+
+.heroSlide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* smaller buttons on mobile */
+.heroSlider__btn{
+  width: 36px;
+  height: 36px;
+  font-size: 22px;
+}
+}
+
+/* Extra small phones */
+@media (max-width: 480px){
+.heroSlider__viewport{
+  height: 220px;
+}
+.heroSlide{
+  height: 220px;
+}
+}
+
+
+/* FOOTER */
+.footer{
+  background: linear-gradient(180deg, #0b2a63, #061735);
+  color:#eaf2ff;
+  padding: 22px 0 10px;
+}
+.footer__grid{
+  display:grid;
+  grid-template-columns: 1.1fr .8fr .9fr;
+  gap:18px;
+  align-items:start;
+}
+.footer__logo{
+  width:46px;
+  height:auto;
+  display:block;
+  margin-bottom:10px;
+}
+.footer__name{
+  font-weight:900;
+  margin-bottom:4px;
+}
+.footer__tagline{
+  color: rgba(234,242,255,.85);
+  font-weight:600;
+  font-size: 13px;
+}
+.footer__title{
+  margin:0 0 10px;
+  font-size: 14px;
+  font-weight:900;
+}
+.footer a{
+  display:block;
+  color: rgba(234,242,255,.85);
+  text-decoration:none;
+  margin: 6px 0;
+  font-weight:600;
+  font-size: 13px;
+}
+.footer a:hover{ color:#fff; text-decoration:underline; }
+.footer__contact div{
+  margin: 6px 0;
+  font-size: 13px;
+  font-weight:600;
+  color: rgba(234,242,255,.85);
+}
+.footer__bottom{
+  text-align:center;
+  padding-top: 14px;
+  font-size: 12px;
+  color: rgba(234,242,255,.70);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .hero__grid{ grid-template-columns: 1fr; }
+  .donationCard{ margin-top: 6px; }
+  .hero__photo{ height: 280px; }
+  .programs{ grid-template-columns: repeat(2, 1fr); }
+  .footer__grid{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px){
+  .brand__logo{ width: 92px; }
+  .nav{ gap:10px; font-size: 14px; }
+  .hero__photo{ height: 220px; }
+  .programs{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px){
+  .topbar__inner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .nav{
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+  .hero__title{
+    font-size: clamp(28px, 7vw, 42px);
+  }
+  .donationCard{
+    padding: 18px 16px;
+  }
+  .section{
+    padding: 18px 0;
+  }
+}
+
+</style>
+
+
+        
+
+<body>
+
+  <!-- TOP MENU (white + blue line) -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="BCP Home">
+        <img class="brand__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP Logo" />
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="https://bcprdc.org/board.html" data-en="Board" data-fr="Conseil">Board</a>
+        <span class="nav__sep">|</span>
+        <a class="nav__link" href="reports.html" data-en="Reports" data-fr="Rapports">Reports</a>
+
+        <!-- ✅ Language Switch -->
+        <div class="langToggle" aria-label="Language switcher">
+          <span class="langLabel" data-en="Language:" data-fr="Langue :">Language:</span>
+          <button class="langBtn is-active" type="button" data-lang-btn="en" onclick="setLang('en')">EN</button>
+          <button class="langBtn" type="button" data-lang-btn="fr" onclick="setLang('fr')">FR</button>
+        </div>
+      </nav>
+    </div>
+    <div class="topbar__line"></div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__grid">
+
+        <!-- LEFT: Title + Image -->
+        <section class="hero__left">
+          <h1 class="hero__title"
+              data-en="We Provide Solution"
+              data-fr="Nous apportons des solutions">
+            We Provide Solution
+          </h1>
+
+          <div class="hero__photoWrap">
+
+            <div class="heroSlider" data-hero-slider>
+              <button class="heroSlider__btn heroSlider__btn--left" type="button" aria-label="Previous image" data-hero-prev>‹</button>
+          
+              <div class="heroSlider__viewport">
+                <div class="heroSlider__track" data-hero-track>
+                  <!-- ✅ Put your images in /image/ folder (recommended) -->
+                  <div class="heroSlide"><img src="https://bcprdc.org/bcpdrc/1_student.jpg" alt="Students in class"></div>
+                  <div class="heroSlide"><img src="https://bcprdc.org/bcpdrc/2_lab.jpg" alt="School building exterior"></div>
+                  <div class="heroSlide"><img src="https://bcprdc.org/bcpdrc/class.jpg" alt="Students reading"></div>
+                  <div class="heroSlide"><img src="https://bcprdc.org/bcpdrc/aae_7.jpg" alt="School activity"></div>
+                  <div class="heroSlide"><img src="https://bcprdc.org/bcpdrc/prof_student.png?v=2" alt="Teachers and students"></div>
+                </div>
+              </div>
+          
+              <button class="heroSlider__btn heroSlider__btn--right" type="button" aria-label="Next image" data-hero-next>›</button>
+            </div>
+          
+            <div class="heroDots" data-hero-dots aria-label="Slider navigation"></div>
+          
+          </div>
+          
+        </section>
+
+        <!-- RIGHT: Donation card -->
+        <aside class="hero__right">
+          <div class="donationCard">
+            <p class="donationCard__text"
+               data-en="Together, we empower communities<br/>and break the cycle of poverty"
+               data-fr="Ensemble, nous renforçons les communautés<br/>et brisons le cycle de la pauvreté">
+              Together, we empower communities<br/>
+              and break the cycle of poverty
+            </p>
+
+            <!--<a class="btn btn--pill btn--light"
+               href="donation.html"
+               data-en="Donation"
+               data-fr="Faire un don">
+              Donation
+            </a>-->
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section class="section section--about">
+    <div class="container">
+      <h2 class="section__title" data-en="About Us" data-fr="À propos de nous">About Us</h2>
+      <p class="section__text"
+         data-en="Break the Chain of Poverty is a non-profit humanitarian organization, focused on helping the people in Kinshasa, DRC, with education, training, jobs, medical assistance, and individual care."
+         data-fr="Break the Chain of Poverty est une organisation humanitaire à but non lucratif, axée sur l’aide aux populations de Kinshasa, RDC, par l’éducation, la formation, l’emploi, l’assistance médicale et l’accompagnement individuel.">
+        Break the Chain of Poverty is a non-profit humanitarian organization, focused on helping the people in
+        Kinshasa, DRC, with education, training, jobs, medical assistance, and individual care.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="section section--programs">
+    <div class="container">
+      <h2 class="section__title section__title--glow" data-en="Our Programs" data-fr="Nos programmes">Our Programs</h2>
+
+      <div class="programs">
+        <a class="programCard programCard--edu"
+           href="https://bcprdc.org/education.html">
+          <div class="programCard__name" data-en="Education" data-fr="Éducation">Education</div>
+          <div class="programCard__desc"
+               data-en="We provide quality education to support learning for all ages."
+               data-fr="Nous offrons une éducation de qualité pour soutenir l’apprentissage à tout âge.">
+            We provide quality education to support learning for all ages.
+          </div>
+        </a>
+
+        <a class="programCard programCard--hum"
+           href="https://bcprdc.org/humanitarian.html">
+          <div class="programCard__name" data-en="Humanitarian Services" data-fr="Services humanitaires">Humanitarian Services</div>
+          <div class="programCard__desc"
+               data-en="We empower local leaders to create sustainable change."
+               data-fr="Nous aidons les leaders locaux à créer un changement durable.">
+            We empower local leaders to create sustainable change.
+          </div>
+        </a>
+
+        <a class="programCard programCard--hos"
+           href="https://bcprdc.org/hospital.html">
+          <div class="programCard__name" data-en="Hospital" data-fr="Hôpital">Hospital</div>
+          <div class="programCard__desc"
+               data-en="We ensure medical care for those who need it."
+               data-fr="Nous assurons des soins médicaux pour ceux qui en ont besoin.">
+            We ensure medical care for those who need it.
+          </div>
+        </a>
+
+        <a class="programCard programCard--pro" href="https://bcprdc.org/Project.html">
+          <div class="programCard__name" data-en="Project" data-fr="Projet">Project</div>
+          <div class="programCard__desc"
+               data-en="We implement development projects that uplift local communities."
+               data-fr="Nous mettons en œuvre des projets de développement qui améliorent les communautés locales.">
+            We implement development projects that uplift local communities.
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="container">
+      <h2 class="section__title section__title--glow"
+          data-en="Get in Touch"
+          data-fr="Contactez-nous">
+        Get in Touch
+      </h2>
+  
+      <form class="contactForm"
+            action="https://formsubmit.co/kolabrd10@gmail.com"
+            method="POST">
+  
+        <!-- REQUIRED SETTINGS -->
+        <input type="hidden" name="_subject" value="New message from BCP website">
+        <input type="hidden" name="_captcha" value="false">
+  
+        <!-- ✅ REDIRECT BACK TO SITE -->
+        <input type="hidden" name="_next" value="https://bcprdc.org/#contact">
+  
+        <input class="input" type="text" name="name" placeholder="Name" required />
+        <input class="input" type="email" name="email" placeholder="Email" required />
+        <textarea class="input input--textarea" name="message" placeholder="Message" required></textarea>
+  
+        <button class="btn btn--primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <img class="footer__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP" />
+
+        <!-- ✅ Keep this ALWAYS English (same text for EN + FR) -->
+        <div class="footer__name"
+             data-en="Break the Chain of Poverty"
+             data-fr="Break the Chain of Poverty">
+          Break the Chain of Poverty
+        </div>
+
+        <div class="footer__tagline"
+             data-en="Empowering communities, transforming lives."
+             data-fr="Autonomiser les communautés, transformer des vies.">
+          Empowering communities, transforming lives.
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__title" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+        <a href="index.html" data-en="Home" data-fr="Accueil">Home</a>
+        <!--<a href="#about" data-en="About" data-fr="À propos">About</a>
+        <a href="programs.html" data-en="Programs" data-fr="Programmes">Programs</a>
+        <a href="reports.html" data-en="Reports" data-fr="Rapports">Reports</a>-->
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__title" data-en="Contact Us" data-fr="Nous contacter">Contact Us</h4>
+        <div data-en="Email: info@bcporc.org" data-fr="Email : info@bcpordc.org">Email: info@bcporc.org</div>
+        <div data-en="Phone: +243 960 456 789" data-fr="Téléphone : +243 960 456 789">Phone: +243 960 456 789</div>
+        <div data-en="Location: Kinshasa, DRC" data-fr="Lieu : Kinshasa, RDC">Location: Kinshasa, DRC</div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      © <span id="year"></span> Break the Chain of Poverty. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // ✅ Translation engine (EN/FR) + placeholder support
+    function setLang(lang){
+      document.documentElement.lang = lang;
+
+      // translate text nodes with data-en/data-fr
+      document.querySelectorAll("[data-en][data-fr]").forEach(el=>{
+        el.innerHTML = el.dataset[lang];
+      });
+
+      // translate placeholders
+      document.querySelectorAll("[data-en-placeholder][data-fr-placeholder]").forEach(el=>{
+        el.setAttribute("placeholder", el.dataset[lang + "Placeholder"]);
+      });
+
+      localStorage.setItem("lang", lang);
+      updateActiveLangButton(lang);
+    }
+
+    function updateActiveLangButton(lang){
+      document.querySelectorAll("[data-lang-btn]").forEach(btn=>{
+        btn.classList.toggle("is-active", btn.dataset.langBtn === lang);
+        btn.setAttribute("aria-pressed", btn.dataset.langBtn === lang ? "true" : "false");
+      });
+    }
+
+    function initLang(){
+      const saved = localStorage.getItem("lang");
+      const browserIsFrench = (navigator.language || "").toLowerCase().startsWith("fr");
+      const defaultLang = saved || (browserIsFrench ? "fr" : "en");
+      setLang(defaultLang);
+    }
+
+    document.addEventListener("DOMContentLoaded", ()=>{
+      initLang();
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+
+    // ===== HERO SLIDER (index.html) =====
+  (function(){
+    const root = document.querySelector("[data-hero-slider]");
+    if(!root) return;
+
+    const track = root.querySelector("[data-hero-track]");
+    const slides = Array.from(track.children);
+    const prevBtn = root.querySelector("[data-hero-prev]");
+    const nextBtn = root.querySelector("[data-hero-next]");
+    const dotsWrap = document.querySelector("[data-hero-dots]");
+
+    let index = 0;
+    let autoTimer = null;
+    const AUTO_MS = 4500;
+
+    // build dots
+    const dots = slides.map((_, i) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", `Go to image ${i + 1}`);
+      b.addEventListener("click", () => goTo(i, true));
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function update(){
+      track.style.transform = `translateX(${-index * 100}%)`;
+      dots.forEach((d, i) => d.setAttribute("aria-current", i === index ? "true" : "false"));
+    }
+
+    function goTo(i, userAction=false){
+      index = (i + slides.length) % slides.length;
+      update();
+      if(userAction) restartAuto();
+    }
+
+    function next(userAction=false){ goTo(index + 1, userAction); }
+    function prev(userAction=false){ goTo(index - 1, userAction); }
+
+    prevBtn.addEventListener("click", () => prev(true));
+    nextBtn.addEventListener("click", () => next(true));
+
+    function startAuto(){ autoTimer = setInterval(() => next(false), AUTO_MS); }
+    function stopAuto(){ if(autoTimer) clearInterval(autoTimer); autoTimer = null; }
+    function restartAuto(){ stopAuto(); startAuto(); }
+
+    root.addEventListener("mouseenter", stopAuto);
+    root.addEventListener("mouseleave", startAuto);
+
+    // init
+    update();
+    startAuto();
+  })();
+  </script>
+
+</body>
+</html>

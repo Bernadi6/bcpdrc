@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google tag (gtag.js) snippet added by Site Kit -->
+  <meta property="og:title" content="Break the Chain of Poverty - Charity Organization">
+  <meta property="og:description" content="We Provide Solutions">
+  <meta property="og:image" content="https://bcprdc.org/bcpdrc/bcp-logo.jpg">
+  <meta property="og:url" content="https://bcpdrc.org">
+  
+  <title>BCP | Break the Chain of Poverty</title>
+  
+  
+  <link rel="stylesheet" href="style.css" />
+  <!-- End Google Tag Manager snippet added by Site Kit -->
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png?v=2" sizes="32x32" />
+  <link rel="icon" href="https://bcprdc.org/bcpdrc/bcplogo.png?v=2" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://bcprdc.org/bcpdrc/bcplogo.png?v=2" />
+  <meta name="msapplication-TileImage" content="https://bcprdc.org/bcpdrc/bcplogo.png?v=2" />
+
+  <link rel='stylesheet' id='brac-usa-style-css' href='https://reachyourpotential.me/ool/css/style.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='player_css-css' href='https://reachyourpotential.me/kool/css/plyr.css?ver=6.6.2' media='all' />
+        <link rel='stylesheet' id='select2_css-css' href='https://reachyourpotential.me/kool/css/select2.min.css?ver=6.6.2' media='all' />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://reachyourpotential.me/kool/js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script src="https://reachyourpotential.me/kool/js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+</head>
+  <style>
+    :root{
+      --blue-950:#061735;
+      --blue-900:#0b2a63;
+      --blue-850:#0f3478;
+      --blue-800:#11408f;
+      --blue-700:#1b57c2;
+
+      --white:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+
+      --shadow: 0 14px 30px rgba(2, 6, 23, .16);
+      --shadow-soft: 0 10px 22px rgba(2, 6, 23, .10);
+
+      --radius:16px;
+      --radius-lg:22px;
+
+      --container: 1080px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:#eef4ff;
+    }
+
+    .container{
+      width:min(var(--container), 92vw);
+      margin:0 auto;
+    }
+
+    /* ===== TOP MENU (same like index) ===== */
+    .topbar{ background: var(--white); }
+    .topbar__inner{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      padding:18px 0 10px;
+    }
+    .brand{
+      display:inline-flex;
+      align-items:flex-start;
+      text-decoration:none;
+    }
+    .brand__logo{
+      width:110px;
+      height:auto;
+      display:block;
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding-top:8px;
+      font-weight:600;
+      flex-wrap:wrap;
+    }
+    .lang{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-left: 10px;
+}
+    .nav__link{
+      color: var(--blue-850);
+      text-decoration:none;
+    }
+    .nav__link:hover{ text-decoration:underline; }
+    .nav__sep{ color:#8aa1c9; }
+    .topbar__line{
+      height:10px;
+      background: linear-gradient(90deg, var(--blue-700), var(--blue-850));
+    }
+
+    /* ===== WAVE HERO HEADER ===== */
+    .waveHero{
+      position:relative;
+      padding: 30px 0 42px;
+      background:
+        radial-gradient(900px 420px at 25% 20%, rgba(255,255,255,.18), rgba(255,255,255,0)),
+        linear-gradient(180deg, var(--blue-850), var(--blue-800));
+      overflow:hidden;
+    }
+    .waveHero::after{
+      content:"";
+      position:absolute;
+      left:-10%;
+      right:-10%;
+      bottom:-1px;
+      height: 120px;
+      background:
+        radial-gradient(900px 140px at 50% 0%, rgba(255,255,255,.22), rgba(255,255,255,0)),
+        linear-gradient(180deg, rgba(255,255,255,.10), rgba(238,244,255,1));
+      border-top-left-radius: 60% 100%;
+      border-top-right-radius: 60% 100%;
+      filter: blur(.1px);
+    }
+    .waveHero__inner{
+      position:relative;
+      text-align:center;
+      color:#eaf2ff;
+      z-index:1;
+    }
+    .waveHero__title{
+      margin:0;
+      font-size: clamp(26px, 3.4vw, 40px);
+      font-weight: 900;
+      letter-spacing:.2px;
+      text-shadow: 0 10px 24px rgba(0,0,0,.25);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .waveHero__badge{
+      width:42px;
+      height:42px;
+      object-fit:contain;
+      filter: drop-shadow(0 10px 14px rgba(0,0,0,.25));
+      border-radius: 10px;
+      background: rgba(255,255,255,.10);
+      padding:6px;
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    .waveHero__subtitle{
+      margin: 8px 0 0;
+      font-weight: 700;
+      opacity:.92;
+      text-shadow: 0 10px 24px rgba(0,0,0,.22);
+      font-size: 14px;
+      max-width: 860px;
+      margin-left:auto;
+      margin-right:auto;
+      line-height:1.5;
+    }
+
+    /* ===== PAGE BACKGROUND ===== */
+    .pageBg{
+      background:
+        radial-gradient(1000px 520px at 55% 18%, rgba(255,255,255,.6), rgba(255,255,255,0)),
+        linear-gradient(180deg, #eaf1ff, #eef4ff);
+      padding: 18px 0 28px;
+    }
+
+    /* ===== BIG TOP SLIDER (CENTERED) ===== */
+    .galleryHero{
+      margin: 18px auto 22px;
+      display:flex;
+      justify-content:center;
+    }
+    .galleryHero__card{
+      width: 100%;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: 22px;
+      box-shadow: 0 14px 30px rgba(2,6,23,.14);
+      overflow:hidden;
+    }
+    .galleryHero__head{
+      padding: 18px 18px 10px;
+      text-align:center;
+    }
+    .galleryHero__title{
+      margin:0;
+      font-size: 20px;
+      font-weight: 900;
+      color:#0b2a63;
+    }
+    .galleryHero__sub{
+      margin: 6px auto 0;
+      max-width: 760px;
+      font-size: 14px;
+      font-weight: 650;
+      color:#334155;
+      line-height:1.5;
+    }
+    .slider{ position:relative; padding: 0 52px; }
+    .slider__viewport{
+      overflow:hidden;
+      border-top: 1px solid rgba(15, 23, 42, .06);
+      border-bottom: 1px solid rgba(15, 23, 42, .06);
+      background: linear-gradient(180deg, rgba(2,6,23,.03), rgba(2,6,23,.00));
+    }
+    .slider__track{
+      display:flex;
+      transition: transform .55s ease;
+      will-change: transform;
+    }
+    .slide{ flex: 0 0 100%; position:relative; height: 360px; }
+    .slide img{ width:100%; height:100%; object-fit: cover; display:block; }
+    .slide::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,.16), rgba(0,0,0,0) 45%, rgba(0,0,0,.10));
+      pointer-events:none;
+    }
+    .slider__btn{
+      position:absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.35);
+      background: rgba(11,42,99,.65);
+      color:#fff;
+      font-size: 26px;
+      line-height: 1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      box-shadow: 0 10px 20px rgba(2,6,23,.18);
+      transition: transform .12s ease, background .12s ease;
+    }
+    .slider__btn:hover{ background: rgba(11,42,99,.85); }
+    .slider__btn:active{ transform: translateY(-50%) scale(.98); }
+    .slider__btn--left{ left: 10px; }
+    .slider__btn--right{ right: 10px; }
+
+    .sliderDots{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 12px 16px;
+      background: rgba(255,255,255,.92);
+    }
+    .sliderDots button{
+      width: 9px; height: 9px;
+      border-radius: 999px;
+      border: none;
+      cursor:pointer;
+      background: rgba(11,42,99,.25);
+      transition: transform .12s ease, background .12s ease;
+    }
+    .sliderDots button[aria-current="true"]{
+      background: rgba(11,42,99,.95);
+      transform: scale(1.15);
+    }
+
+    /* ===== SCHOOL CARDS (image left, info right) ===== */
+    .schoolList{ display:grid; gap: 18px; margin-top: 8px; }
+
+    .schoolCard{
+      display:grid;
+      grid-template-columns: 1.1fr 1.4fr;
+      gap: 16px;
+      padding: 16px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(15, 23, 42, .06);
+      box-shadow: var(--shadow-soft);
+      overflow:hidden;
+    }
+
+    .schoolCard__imgWrap{
+      border-radius: 16px;
+      overflow:hidden;
+      border: 1px solid rgba(15,23,42,.07);
+      box-shadow: 0 10px 18px rgba(2,6,23,.08);
+      min-height: 210px;
+      background: #fff;
+    }
+    .schoolCard__imgWrap img{
+      width:100%;
+      height:100%;
+      min-height: 210px;
+      object-fit: cover;
+      display:block;
+    }
+
+    .schoolCard__body{ padding: 6px 6px 6px 2px; }
+
+    .schoolCard__title{
+      margin: 0 0 8px;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--blue-900);
+    }
+
+    .meta{
+      display:grid;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color:#22324a;
+    }
+    .meta span{ color:#475569; font-weight:700; }
+
+    .schoolCard__desc{
+      margin: 10px 0 12px;
+      color:#22324a;
+      line-height:1.65;
+      font-weight:650;
+      font-size: 13px;
+    }
+
+    .schoolCard__links{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px 14px;
+      margin-bottom: 10px;
+      align-items:center;
+    }
+    .link{
+      font-weight: 900;
+      color: var(--blue-700);
+      text-decoration:none;
+      font-size: 13px;
+    }
+    .link:hover{ text-decoration:underline; }
+
+    .btnPrimary{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 11px 16px;
+      border-radius: 12px;
+      font-weight:900;
+      text-decoration:none;
+      border:none;
+      cursor:pointer;
+      color:#fff;
+      background: linear-gradient(180deg, #1a55c6, #0b2a63);
+      box-shadow: var(--shadow-soft);
+      transition: transform .12s ease, box-shadow .12s ease;
+      font-size: 13px;
+      min-width: 150px;
+    }
+    .btnPrimary:hover{ box-shadow: var(--shadow); }
+    .btnPrimary:active{ transform: translateY(1px); }
+
+    .schoolCard__actions{
+      display:flex;
+      justify-content:flex-end;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer{
+      background: linear-gradient(180deg, #0b2a63, #061735);
+      color:#eaf2ff;
+      padding: 22px 0 10px;
+      margin-top: 18px;
+    }
+    .footer{
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+
+    .footer__grid{
+      display:grid;
+      grid-template-columns: 1.1fr .8fr .9fr;
+      gap:18px;
+      align-items:start;
+    }
+    .footer__logo{
+      width:46px;
+      height:auto;
+      display:block;
+      margin-bottom:10px;
+      border-radius: 8px;
+    }
+    .footer__name{ font-weight:900; margin-bottom:4px; }
+    .footer__tagline{
+      color: rgba(234,242,255,.85);
+      font-weight:600;
+      font-size: 13px;
+      line-height:1.45;
+    }
+    .footer__title{
+      margin:0 0 10px;
+      font-size: 14px;
+      font-weight:900;
+    }
+    .footer a{
+      display:block;
+      color: rgba(234,242,255,.85);
+      text-decoration:none;
+      margin: 6px 0;
+      font-weight:600;
+      font-size: 13px;
+    }
+    .footer a:hover{ color:#fff; text-decoration:underline; }
+    .footer__contact div{
+      margin: 6px 0;
+      font-size: 13px;
+      font-weight:600;
+      color: rgba(234,242,255,.85);
+    }
+    .footer__bottom{
+      text-align:center;
+      padding-top: 14px;
+      font-size: 12px;
+      color: rgba(234,242,255,.70);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 980px){
+      .slide{ height: 250px; }
+      .slider{ padding: 0 48px; }
+      .schoolCard{ grid-template-columns: 1fr; }
+      .schoolCard__actions{ justify-content:flex-start; }
+      .footer__grid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px){
+      .brand__logo{ width: 92px; }
+      .nav{ gap:10px; font-size: 14px; }
+      .slide{ height: 210px; }
+      .slider{ padding: 0 44px; }
+    }
+    @media (max-width: 640px){
+      .topbar__inner{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .nav{
+        flex-wrap: wrap;
+        padding-top: 0;
+      }
+      .schoolCard__imgWrap img{
+        height: auto;
+      }
+      .schoolCard__actions{
+        flex-wrap: wrap;
+      }
+    }
+    /* ===== Language switch (EN / FR) ===== */
+.lang{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding-top:6px;
+}
+
+.lang__btn{
+  border: 1px solid rgba(15, 23, 42, .12);
+  background: rgba(255,255,255,.9);
+  color: var(--blue-900);
+  font-weight: 900;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  cursor:pointer;
+  transition: transform .12s ease, background .12s ease;
+}
+
+.lang__btn:hover{ background: rgba(11,42,99,.06); }
+.lang__btn:active{ transform: translateY(1px); }
+
+.lang__btn.is-active{
+  background: rgba(27,87,194,.12);
+  border-color: rgba(27,87,194,.35);
+}
+
+.trusted{
+      margin-top: 18px;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+    }
+    .trusted__title{
+      text-align:center;
+      margin: 6px 0 14px;
+      font-weight: 900;
+      color: var(--blue-900);
+      font-size: 22px;
+    }
+    .trustedGrid{
+      display:grid;
+      grid-template-columns: 320px 1fr 360px;
+      gap: 14px;
+      align-items:stretch;
+    }
+
+    .directorCard{
+      background: rgba(255,255,255,.96);
+      border: 1px solid rgba(15, 23, 42, .07);
+      border-radius: 14px;
+      box-shadow: 0 10px 18px rgba(2,6,23,.08);
+      overflow:hidden;
+    }
+    .directorCard img{
+      width:100%;
+      height: 220px;
+      object-fit: cover;
+      display:block;
+    }
+    .directorCard__body{
+      padding: 12px 14px 14px;
+    }
+    .directorName{
+      margin: 0 0 6px;
+      font-weight: 900;
+      color: var(--blue-900);
+      font-size: 18px;
+    }
+    .directorRole{
+      margin: 0 0 10px;
+      color: #22324a;
+      font-weight: 750;
+      font-size: 13px;
+      opacity: .9;
+    }
+
+  </style>
+
+<body>
+
+  <!-- TOP MENU -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="BCP Home">
+        <!-- Change path to your real logo -->
+        <img class="brand__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP Logo" />
+        
+        <img class="brand__logo brand__logo--secondary"
+       src="https://bcprdc.org/bcpdrc/aae_logo.jpg"
+       alt="AAE Logo" />
+      </a>
+
+      <nav class="nav">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <nav class="nav">
+            <a class="nav__link" href="https://bcprdc.org/board.html" data-en="Board" data-fr="Conseil">Board</a>
+            <span class="nav__sep">|</span>
+            <!--<a class="nav__link" href="reports.html" data-en="Schools" data-fr="Ecoles"></a>-->
+          </nav>
+        
+          <div class="lang" aria-label="Language switcher">
+            <button class="lang__btn" type="button" data-lang="en">EN</button>
+            <button class="lang__btn" type="button" data-lang="fr">FR</button>
+          </div>
+        </div>
+        
+      </nav>
+    </div>
+    <div class="topbar__line"></div>
+  </header>
+
+  <!-- HERO -->
+  <header class="waveHero">
+    <div class="container waveHero__inner">
+      <h1 class="waveHero__title"
+    data-en="AMERICAN ACADEMY OF EXCELLENCE SITES"
+    data-fr="SITES AMERICAN ACADEMY OF EXCELLENCE">
+  AMERICAN ACADEMY OF EXCELLENCE SITES
+</h1>
+
+<p class="waveHero__subtitle"
+   data-en="Explore our school sites across Kinshasa. Each campus supports children with quality learning, mentorship, and community impact."
+   data-fr="Découvrez nos écoles à travers Kinshasa. Chaque site soutient les enfants avec un apprentissage de qualité, du mentorat et un impact communautaire.">
+  Explore our school sites across Kinshasa. Each campus supports children with quality learning, mentorship, and community impact.
+</p>
+
+    </div>
+  </header>
+
+  <main class="pageBg">
+    <div class="container">
+
+      <!-- BIG TOP SLIDER (middle / top of section) -->
+      <section class="galleryHero" aria-label="Schools Gallery">
+        <div class="galleryHero__card">
+
+          <div class="galleryHero__head">
+            <h2 class="galleryHero__title" data-en="" data-fr=""></h2>
+
+
+
+          </div>
+
+          <div class="slider" data-slider>
+            <button class="slider__btn slider__btn--left" type="button" aria-label="Previous image" data-prev>‹</button>
+
+            <div class="slider__viewport" data-viewport>
+              <div class="slider__track" data-track>
+                <!-- Put your images in /image/ folder (or change path) -->
+                <div class="slide"><img src="https://bcprdc.org/bcpdrc/IMG_3259.JPG" alt="Students in class"></div>
+                <div class="slide"><img src="https://bcprdc.org/bcpdrc/IMG_3254.JPG" alt="School building exterior"></div>
+                <div class="slide"><img src="https://bcprdc.org/bcpdrc/IMG_3256.JPG" alt="Students reading"></div>
+                <div class="slide"><img src="https://bcprdc.org/bcpdrc/IMG_3260.JPG" alt="School activity"></div>
+                <div class="slide"><img src="https://bcprdc.org/bcpdrc/IMG_3258.JPG" alt="Teachers and students"></div>
+                <div class="slide"><img src="https://bcprdc.org/bcpdrc/IMG_3257.JPG" alt="Teachers and students"></div>
+                <div class="slide"><img src="https://bcprdc.org/bcpdrc/IMG_3253.JPG" alt="Teachers and students"></div>
+              </div>
+            </div>
+
+            <button class="slider__btn slider__btn--right" type="button" aria-label="Next image" data-next>›</button>
+          </div>
+
+          <div class="sliderDots" data-dots aria-label="Slider navigation"></div>
+
+        </div>
+      </section>
+
+      <!-- SCHOOL LIST -->
+<section class="schoolList">
+
+  <!-- AAE1 -->
+  <article class="schoolCard">
+    <div class="schoolCard__imgWrap">
+      <img src="https://bcprdc.org/bcpdrc/aae_1.png" alt="AAE1 - Kiala school image">
+    </div>
+    <div class="schoolCard__body">
+      <h2 class="schoolCard__title">AAE1 – KIALA</h2>
+
+      <div class="meta">
+        <div>
+          <span data-en="Location:" data-fr="Localisation :">Location:</span>
+          <span data-en="Kiala, Kinshasa" data-fr="Kiala, Kinshasa">Kiala, Kinshasa</span>
+        </div>
+
+        <div>
+          <span data-en="Students:" data-fr="Élèves :">Students:</span>
+          <span data-en="528 (316 girls, 198 boys)" data-fr="528 (316 filles, 198 garçons)">528 (316 girls, 198 boys)</span>
+        </div>
+
+        <div>
+          <span data-en="Employees:" data-fr="Employés :">Employees:</span>
+          <span data-en="28" data-fr="28">28</span>
+        </div>
+
+        <div>
+          <span data-en="Activities:" data-fr="Activités :">Activities:</span>
+          <a class="link" href="#" data-en="View Activities" data-fr="Voir les activités">View Activities</a>
+        </div>
+      </div>
+
+      <p class="schoolCard__desc"
+         data-en="AAE1 serves a densely populated area, offering quality education and mentorship for children affected by poverty. Impact: education here helps reduce child labor, promotes gender equality, and gives students tools to build better futures."
+         data-fr="AAE1 dessert une zone très peuplée, offrant une éducation de qualité et du mentorat aux enfants touchés par la pauvreté. Impact : l’éducation ici aide à réduire le travail des enfants, favorise l’égalité des sexes et donne aux élèves les outils pour construire un avenir meilleur.">
+        AAE1 serves a densely populated area, offering quality education and mentorship for children affected by poverty.
+        Impact: education here helps reduce child labor, promotes gender equality, and gives students tools to build better futures.
+      </p>
+
+      <div class="schoolCard__actions">
+        <a class="btnPrimary" href="#" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- AAE2 -->
+  <article class="schoolCard">
+    <div class="schoolCard__imgWrap">
+      <img src="https://bcprdc.org/bcpdrc/aae-2.png" alt="AAE2 - Monzha school image">
+    </div>
+    <div class="schoolCard__body">
+      <h2 class="schoolCard__title">AAE2</h2>
+
+      <div class="meta">
+        <div>
+          <span data-en="Location:" data-fr="Localisation :">Location:</span>
+          <span data-en="Monzha, Kinshasa" data-fr="Monzha, Kinshasa">Monzha, Kinshasa</span>
+        </div>
+
+        <div>
+          <span data-en="Students:" data-fr="Élèves :">Students:</span>
+          <span data-en="105 (58 girls, 44 boys)" data-fr="105 (58 filles, 44 garçons)">105 (58 girls, 44 boys)</span>
+        </div>
+
+        <div>
+          <span data-en="Employees:" data-fr="Employés :">Employees:</span>
+          <span data-en="21" data-fr="21">21</span>
+        </div>
+
+        <div>
+          <span data-en="Activities:" data-fr="Activités :">Activities:</span>
+          <a class="link" href="#" data-en="View Activities" data-fr="Voir les activités">View Activities</a>
+        </div>
+      </div>
+
+      <p class="schoolCard__desc"
+         data-en="This site supports students with classrooms, learning materials, and mentorship opportunities to help them stay in school and grow academically."
+         data-fr="Ce site soutient les élèves grâce à des salles de classe, du matériel scolaire et des opportunités de mentorat afin de les aider à rester à l’école et à progresser sur le plan académique.">
+        This site supports students with classrooms, learning materials, and mentorship opportunities to help them stay in school
+        and grow academically.
+      </p>
+
+      <div class="schoolCard__actions">
+        <a class="btnPrimary" href="#" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- AAE3 -->
+  <article class="schoolCard">
+    <div class="schoolCard__imgWrap">
+      <img src="https://bcprdc.org/bcpdrc/aae_3.png" alt="AAE3 - Kimpeza school image">
+    </div>
+    <div class="schoolCard__body">
+      <h2 class="schoolCard__title">AAE3 </h2>
+
+      <div class="meta">
+        <div>
+          <span data-en="Location:" data-fr="Localisation :">Location:</span>
+          <span data-en="Kimpeza, Kinshasa" data-fr="Kimpeza, Kinshasa">Kimpeza, Kinshasa</span>
+        </div>
+
+        <div>
+          <span data-en="Students:" data-fr="Élèves :">Students:</span>
+          <span data-en="205 (530 girls, 116 boys)" data-fr="205 (530 filles, 116 garçons)">205 (530 girls, 116 boys)</span>
+        </div>
+
+        <div>
+          <span data-en="Employees:" data-fr="Employés :">Employees:</span>
+          <span data-en="17" data-fr="17">17</span>
+        </div>
+
+        <div>
+          <span data-en="Activities:" data-fr="Activités :">Activities:</span>
+          <a class="link" href="#" data-en="View Activities" data-fr="Voir les activités">View Activities</a>
+        </div>
+      </div>
+
+      <p class="schoolCard__desc"
+         data-en="AAE3 strengthens access to education through improved classrooms, teacher support, and community involvement."
+         data-fr="AAE3 renforce l’accès à l’éducation grâce à l’amélioration des salles de classe, au soutien des enseignants et à l’implication de la communauté.">
+        AAE3 strengthens access to education through improved classrooms, teacher support, and community involvement.
+      </p>
+
+      <div class="schoolCard__actions">
+        <a class="btnPrimary" href="#" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- AAE4 -->
+  <article class="schoolCard">
+    <div class="schoolCard__imgWrap">
+      <img src="https://bcprdc.org/bcpdrc/aae_4.png" alt="AAE4 - Masina school image">
+    </div>
+    <div class="schoolCard__body">
+      <h2 class="schoolCard__title">AAE4 – MASINA</h2>
+
+      <div class="meta">
+        <div>
+          <span data-en="Location:" data-fr="Localisation :">Location:</span>
+          <span data-en="Masina, Kinshasa" data-fr="Masina, Kinshasa">Masina, Kinshasa</span>
+        </div>
+
+        <div>
+          <span data-en="Students:" data-fr="Élèves :">Students:</span>
+          <span data-en="412 (230 girls, 182 boys)" data-fr="412 (230 filles, 182 garçons)">412 (230 girls, 182 boys)</span>
+        </div>
+
+        <div>
+          <span data-en="Employees:" data-fr="Employés :">Employees:</span>
+          <span data-en="24" data-fr="24">24</span>
+        </div>
+
+        <div>
+          <span data-en="Activities:" data-fr="Activités :">Activities:</span>
+          <a class="link" href="#" data-en="View Activities" data-fr="Voir les activités">View Activities</a>
+        </div>
+      </div>
+
+      <p class="schoolCard__desc"
+         data-en="AAE4 supports children in a high-density neighborhood by providing structured education, safe classrooms, and mentorship programs that encourage long-term academic success."
+         data-fr="AAE4 soutient les enfants dans un quartier à forte densité en offrant une éducation structurée, des salles de classe sécurisées et des programmes de mentorat qui encouragent la réussite scolaire à long terme.">
+        AAE4 supports children in a high-density neighborhood by providing structured education,
+        safe classrooms, and mentorship programs that encourage long-term academic success.
+      </p>
+
+      <div class="schoolCard__actions">
+        <a class="btnPrimary" href="#" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- AAE5 -->
+  <article class="schoolCard">
+    <div class="schoolCard__imgWrap">
+      <img src="https://bcprdc.org/bcpdrc/aae_5.png" alt="AAE5 - Ndjili school image">
+    </div>
+    <div class="schoolCard__body">
+      <h2 class="schoolCard__title">AAE5 </h2>
+
+      <div class="meta">
+        <div>
+          <span data-en="Location:" data-fr="Localisation :">Location:</span>
+          <span data-en="Ndjili, Kinshasa" data-fr="Ndjili, Kinshasa">Ndjili, Kinshasa</span>
+        </div>
+
+        <div>
+          <span data-en="Students:" data-fr="Élèves :">Students:</span>
+          <span data-en="368 (210 girls, 158 boys)" data-fr="368 (210 filles, 158 garçons)">368 (210 girls, 158 boys)</span>
+        </div>
+
+        <div>
+          <span data-en="Employees:" data-fr="Employés :">Employees:</span>
+          <span data-en="22" data-fr="22">22</span>
+        </div>
+
+        <div>
+          <span data-en="Activities:" data-fr="Activités :">Activities:</span>
+          <a class="link" href="#" data-en="View Activities" data-fr="Voir les activités">View Activities</a>
+        </div>
+      </div>
+
+      <p class="schoolCard__desc"
+         data-en="This school focuses on literacy, numeracy, and leadership development, helping students build confidence and essential life skills through education."
+         data-fr="Cette école met l’accent sur la lecture, le calcul et le développement du leadership, aidant les élèves à renforcer leur confiance et à acquérir des compétences essentielles grâce à l’éducation.">
+        This school focuses on literacy, numeracy, and leadership development,
+        helping students build confidence and essential life skills through education.
+      </p>
+
+      <div class="schoolCard__actions">
+        <a class="btnPrimary" href="#" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- AAE6 -->
+  <article class="schoolCard">
+    <div class="schoolCard__imgWrap">
+      <img src="https://bcprdc.org/bcpdrc/aae-6.png" alt="AAE6 - Selembao school image">
+    </div>
+    <div class="schoolCard__body">
+      <h2 class="schoolCard__title">AAE6 </h2>
+
+      <div class="meta">
+        <div>
+          <span data-en="Location:" data-fr="Localisation :">Location:</span>
+          <span data-en="Selembao, Kinshasa" data-fr="Selembao, Kinshasa">Selembao, Kinshasa</span>
+        </div>
+
+        <div>
+          <span data-en="Students:" data-fr="Élèves :">Students:</span>
+          <span data-en="294 (170 girls, 124 boys)" data-fr="294 (170 filles, 124 garçons)">294 (170 girls, 124 boys)</span>
+        </div>
+
+        <div>
+          <span data-en="Employees:" data-fr="Employés :">Employees:</span>
+          <span data-en="19" data-fr="19">19</span>
+        </div>
+
+        <div>
+          <span data-en="Activities:" data-fr="Activités :">Activities:</span>
+          <a class="link" href="#" data-en="View Activities" data-fr="Voir les activités">View Activities</a>
+        </div>
+      </div>
+
+      <p class="schoolCard__desc"
+         data-en="AAE6 provides access to education for children from vulnerable households, emphasizing discipline, academic excellence, and community engagement."
+         data-fr="AAE6 offre un accès à l’éducation aux enfants issus de familles vulnérables, en mettant l’accent sur la discipline, l’excellence académique et l’engagement communautaire.">
+        AAE6 provides access to education for children from vulnerable households,
+        emphasizing discipline, academic excellence, and community engagement.
+      </p>
+
+      <div class="schoolCard__actions">
+        <a class="btnPrimary" href="#" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- AAE7 -->
+  <article class="schoolCard">
+    <div class="schoolCard__imgWrap">
+      <img src="https://bcprdc.org/bcpdrc/aae_7.png" alt="AAE7 - Bumbu school image">
+    </div>
+    <div class="schoolCard__body">
+      <h2 class="schoolCard__title">AAE7 - NDJILI</h2>
+
+      <div class="meta">
+        <div>
+          <span data-en="Location:" data-fr="Localisation :">Location:</span>
+          <span data-en="Bumbu, Kinshasa" data-fr="Bumbu, Kinshasa">Bumbu, Kinshasa</span>
+        </div>
+
+        <div>
+          <span data-en="Students:" data-fr="Élèves :">Students:</span>
+          <span data-en="321 (185 girls, 136 boys)" data-fr="321 (185 filles, 136 garçons)">321 (185 girls, 136 boys)</span>
+        </div>
+
+        <div>
+          <span data-en="Employees:" data-fr="Employés :">Employees:</span>
+          <span data-en="20" data-fr="20">20</span>
+        </div>
+
+        <div>
+          <span data-en="Activities:" data-fr="Activités :">Activities:</span>
+          <a class="link" href="#" data-en="View Activities" data-fr="Voir les activités">View Activities</a>
+        </div>
+      </div>
+
+      <p class="schoolCard__desc"
+         data-en="AAE7 strengthens education access in underserved communities by combining strong academic programs with character development and student support services."
+         data-fr="AAE7 renforce l’accès à l’éducation dans les communautés défavorisées en combinant des programmes académiques solides, le développement du caractère et des services de soutien aux élèves.">
+        AAE7 strengthens education access in underserved communities by combining
+        strong academic programs with character development and student support services.
+      </p>
+
+      <div class="schoolCard__actions">
+        <a class="btnPrimary" href="#" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+      </div>
+    </div>
+  </article>
+
+</section>
+<section class="trusted" aria-label="Trusted care" id="trusted">
+  <div class="trusted__title" data-en="" data-fr=""></div>
+
+  <div class="trustedGrid">
+    <!-- Director -->
+    <div class="directorCard">
+      <img src="https://bcprdc.org/bcpdrc/richard.JPG" alt="Clinic Director">
+      <div class="directorCard__body">
+        <div class="directorName">Ms. Richard Nkongo</div>
+        <div class="directorRole" data-en="Directeur des Ecoles" data-fr="Directeur des Ecoles">School Director</div>
+
+        <div class="infoRow"><span>📞</span> <span data-en="Phone: +243 900 280 220" data-fr="T&#233;l&#233;phone : +243 900 280 220">Phone: +243 900 280 220</span></div>
+        <div class="infoRow"><span>✉️</span> <span data-en="Email: richardnkongo@bcporc.org" data-fr="Email : olivierkadima@bcporc.org">Email: olivierkadima@bcporc.org</span></div>
+        <div class="infoRow"><span>📍</span> <span data-en="Location: Kinshasa, DRC" data-fr="Lieu : Kinshasa, RDC">Location: Kinshasa, DRC</span></div>
+      </div>
+    </div>
+
+    
+</section>
+</main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img class="footer__logo" src="https://bcprdc.org/bcpdrc/bcplogo.png" alt="BCP">
+        <div class="footer__name">
+          Break the Chain of Poverty
+        </div>
+        <div class="footer__tagline"
+             data-en="Empowering communities, transforming lives."
+             data-fr="Autonomiser les communautés, transformer des vies.">
+          Empowering communities, transforming lives.
+        </div>
+      </div>
+  
+      <div>
+        <div class="footer__title" data-en="Programs" data-fr="Programmes">Programs</div>
+        <a href="education.html" data-en="Education" data-fr="Éducation">Education</a>
+        <a href="humanitarian.html" data-en="Humanitarian" data-fr="Humanitaire">Humanitarian</a>
+        <a href="hospital.html" data-en="Hospital" data-fr="Hôpital">Hospital</a>
+        <a href="projects.html" data-en="Project" data-fr="Projet">Project</a>
+      </div>
+  
+      <div class="footer__contact">
+        <div class="footer__title" data-en="Contact Us" data-fr="Contactez-nous">Contact Us</div>
+        <div><span data-en="Email:" data-fr="Email :">Email:</span> info@bcporc.org</div>
+        <div><span data-en="Phone:" data-fr="Téléphone :">Phone:</span> +243 960 456 789</div>
+        <div><span data-en="Location:" data-fr="Adresse :">Location:</span> Kinshasa, DRC</div>
+      </div>
+    </div>
+  
+    <div class="footer__bottom"
+     data-en="© Break the Chain of Poverty. All rights reserved."
+     data-fr="© Break the Chain of Poverty. Tous droits réservés.">
+  © <span id="year"></span> Break the Chain of Poverty. All rights reserved.
+</div>
+
+  </footer>
+  
+
+  <script>
+    // footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ===== slider logic =====
+    (function(){
+      const sliderRoot = document.querySelector('[data-slider]');
+      if(!sliderRoot) return;
+
+      const track = sliderRoot.querySelector('[data-track]');
+      const slides = Array.from(track.children);
+      const prevBtn = sliderRoot.querySelector('[data-prev]');
+      const nextBtn = sliderRoot.querySelector('[data-next]');
+      const dotsWrap = document.querySelector('[data-dots]');
+
+      let index = 0;
+      let autoTimer = null;
+      const AUTO_MS = 4500;
+
+      // Build dots
+      const dots = slides.map((_, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', `Go to image ${i + 1}`);
+        b.addEventListener('click', () => goTo(i, true));
+        dotsWrap.appendChild(b);
+        return b;
+      });
+
+      function update(){
+        track.style.transform = `translateX(${-index * 100}%)`;
+        dots.forEach((d, i) => d.setAttribute('aria-current', i === index ? 'true' : 'false'));
+      }
+
+      function goTo(i, userAction=false){
+        index = (i + slides.length) % slides.length;
+        update();
+        if(userAction) restartAuto();
+      }
+
+      function next(userAction=false){ goTo(index + 1, userAction); }
+      function prev(userAction=false){ goTo(index - 1, userAction); }
+
+      prevBtn.addEventListener('click', () => prev(true));
+      nextBtn.addEventListener('click', () => next(true));
+
+      // Auto play
+      function startAuto(){ autoTimer = setInterval(() => next(false), AUTO_MS); }
+      function stopAuto(){ if(autoTimer) clearInterval(autoTimer); autoTimer = null; }
+      function restartAuto(){ stopAuto(); startAuto(); }
+
+      // Pause on hover (desktop)
+      sliderRoot.addEventListener('mouseenter', stopAuto);
+      sliderRoot.addEventListener('mouseleave', startAuto);
+
+      // Swipe (mobile)
+      let startX = 0, currentX = 0, dragging = false;
+      const viewport = sliderRoot.querySelector('[data-viewport]');
+
+      viewport.addEventListener('touchstart', (e) => {
+        dragging = true;
+        startX = e.touches[0].clientX;
+        currentX = startX;
+        stopAuto();
+      }, {passive:true});
+
+      viewport.addEventListener('touchmove', (e) => {
+        if(!dragging) return;
+        currentX = e.touches[0].clientX;
+      }, {passive:true});
+
+      viewport.addEventListener('touchend', () => {
+        if(!dragging) return;
+        dragging = false;
+
+        const diff = currentX - startX;
+        const threshold = 45;
+
+        if(diff > threshold) prev(true);
+        else if(diff < -threshold) next(true);
+        else restartAuto();
+      });
+
+      // Init
+      update();
+      startAuto();
+    })();
+
+    // ===== EN/FR translator =====
+  (function(){
+    const DEFAULT_LANG = "en";
+    const saved = localStorage.getItem("bcp_lang");
+    let lang = saved || DEFAULT_LANG;
+
+    const buttons = document.querySelectorAll("[data-lang]");
+    const translatables = document.querySelectorAll("[data-en][data-fr]");
+
+    function applyLang(newLang){
+      lang = newLang;
+      document.documentElement.lang = lang;
+
+      translatables.forEach(el => {
+        const text = el.getAttribute(`data-${lang}`);
+        if(text) el.textContent = text;
+      });
+
+      buttons.forEach(b => {
+        b.classList.toggle("is-active", b.getAttribute("data-lang") === lang);
+      });
+
+      localStorage.setItem("bcp_lang", lang);
+    }
+
+    buttons.forEach(b => {
+      b.addEventListener("click", () => applyLang(b.getAttribute("data-lang")));
+    });
+
+    applyLang(lang);
+  })();
+
+
+  </script>
+</body>
+</html>
